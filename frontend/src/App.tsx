@@ -341,7 +341,7 @@ function Dashboard() {
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span style={{ fontSize: '11px', color: '#8b949e', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Predictive Failure Horizon</span>
             <span style={{ fontSize: '20px', fontWeight: 800, color: '#d29922', marginTop: '2px' }}>30 Min Advance</span>
-            <span style={{ fontSize: '11px', color: '#8b949e', marginTop: '2px' }}>BigQuery ML ARIMA_PLUS forecasting</span>
+            <span style={{ fontSize: '11px', color: '#8b949e', marginTop: '2px' }}>Z-Score Drift & Gemini Reasoning</span>
           </div>
         </div>
 

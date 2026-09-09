@@ -124,7 +124,7 @@ export function IntegrationCard({ integration }: IntegrationCardProps) {
             <span>{risk.riskBadge}</span>
           </div>
           <span style={{ fontSize: '10px', color: '#8b949e' }}>
-            ARIMA_PLUS {Math.round(risk.modelConfidence * 100)}% conf
+            Risk Model {Math.round(risk.modelConfidence * 100)}% conf
           </span>
         </div>
       )}
