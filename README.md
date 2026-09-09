@@ -125,20 +125,6 @@ Backend API will listen on `http://localhost:8080` (Health check: `http://localh
 
 ---
 
-## 📅 Patchamomma 2026 Milestone Schedule
-
-| Milestone | Target Date | Status |
-| :--- | :--- | :--- |
-| Build Start | Aug 15, 2026 | Completed |
-| Checkpoint 1 | Aug 20, 2026 | Completed |
-| Checkpoint 2 | Sep 3, 2026 | Completed |
-| **Final Checkpoint (Touchpoint 3)** | **Sep 9, 2026** | **100% Completed & Ready** |
-| Submission Lock | Sep 11, 2026 (8 AM) | Locked & Submitted |
-| Shortlist Announcement | Before Sep 15, 2026 | Pending Review |
-| **Grand Finale** | **Sep 24, 2026** | Upcoming |
-
----
-
 ## 📄 License & Attribution
 
 Licensed under the MIT License — see [LICENSE](LICENSE) for details. Created for Google Patchamomma 2026.
