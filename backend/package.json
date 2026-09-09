@@ -1,0 +1,50 @@
+{
+  "name": "integrisense-api",
+  "version": "0.1.0",
+  "description": "IntegriSense AI — Backend API and Agentic AI Platform",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src tests --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\""
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.1.0",
+    "@fastify/helmet": "^12.0.1",
+    "@google-cloud/bigquery": "^9.0.2",
+    "@google-cloud/firestore": "^9.0.0",
+    "@google-cloud/pubsub": "^6.0.1",
+    "@google-cloud/secret-manager": "^7.0.0",
+    "@google/adk": "^1.6.0",
+    "@google/genai": "^2.17.1",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.4.0",
+    "firebase-admin": "^14.2.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
+    "@vitest/coverage-v8": "^3.0.4",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.4"
+  }
+}

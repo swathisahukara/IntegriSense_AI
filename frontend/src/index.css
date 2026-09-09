@@ -1,0 +1,80 @@
+/* FlowGuard AI — Premium Enterprise Dark Theme Palette (GitHub / Datadog Observability Console Style) */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  --bg-canvas: #0d1117;
+  --bg-surface: #161b22;
+  --bg-subtle: #21262d;
+  --bg-inset: #0d1117;
+  --border-default: #30363d;
+  --border-subtle: #21262d;
+  
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  
+  /* Semantic Accent Colors */
+  --color-healthy: #3fb950;
+  --color-healthy-bg: rgba(46, 160, 67, 0.12);
+  --color-healthy-border: rgba(46, 160, 67, 0.3);
+  
+  --color-degraded: #d29922;
+  --color-degraded-bg: rgba(210, 153, 34, 0.12);
+  --color-degraded-border: rgba(210, 153, 34, 0.3);
+  
+  --color-failed: #f85149;
+  --color-failed-bg: rgba(248, 81, 73, 0.12);
+  --color-failed-border: rgba(248, 81, 73, 0.3);
+  
+  --color-cascading: #a371f7;
+  --color-cascading-bg: rgba(163, 113, 247, 0.12);
+  --color-cascading-border: rgba(163, 113, 247, 0.3);
+  
+  --color-brand: #388bfd;
+  --color-brand-bg: rgba(56, 139, 253, 0.12);
+  --color-brand-border: rgba(56, 139, 253, 0.3);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.92); }
+}
+
+button {
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.15);
+}
+
+code {
+  font-family: var(--font-mono);
+  background: var(--bg-subtle);
+  color: #58a6ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* Custom Enterprise Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-canvas); }
+::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 3px; }

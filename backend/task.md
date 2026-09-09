@@ -1,0 +1,30 @@
+# Tasks
+
+- [x] Task 5: Implement Pub/Sub Service (`backend/src/services/pubsub.service.ts`)
+  - [x] Add `IntegrationEvent` type to `backend/src/models/integration.model.ts`
+  - [x] Create `backend/src/services/pubsub.service.ts` with local fallback support
+  - [x] Create unit tests in `backend/tests/services/pubsub.service.test.ts`
+- [x] Task 6: Implement Anomaly Detection Service (`backend/src/services/anomaly.service.ts`)
+  - [x] Create `backend/src/services/anomaly.service.ts` with deterministic statistics
+  - [x] Add `listIncidents` method to `backend/src/services/firestore.service.ts`
+  - [x] Create unit tests in `backend/tests/services/anomaly.service.test.ts`
+- [x] Task 7: Create Mock Telemetry Configurations (`backend/src/config/telemetry.config.ts`)
+  - [x] Create `backend/src/config/telemetry.config.ts` defining integrations and scenario multipliers
+- [x] Task 8: Implement Backend API Routes and Controllers
+  - [x] Create `backend/src/routes/integrations.ts`
+  - [x] Create `backend/src/routes/incidents.ts`
+  - [x] Create `backend/src/routes/risk.ts`
+  - [x] Create `backend/src/routes/recovery.ts`
+  - [x] Register new route prefixes in `backend/src/server.ts`
+  - [x] Create integration tests for each route under `backend/tests/routes/`
+- [x] Phase 3: Develop Synthetic Data Generator & Simulation Controller (Tasks 9-10)
+  - [x] Create `backend/src/services/generator.service.ts` background runner
+  - [x] Create `backend/src/routes/simulation.ts` controller mapping `POST /simulate`
+  - [x] Align BigQuery service mock baselines with configured metrics
+  - [x] Register simulation routes and generator startup in `backend/src/server.ts`
+  - [x] Write unit tests for the Generator Service and Simulation API endpoints
+- [x] Validation & Verification
+  - [x] Run `npm run typecheck` to check TypeScript compilation
+  - [x] Run `npm run lint` to check linter conformance
+  - [x] Run `npm test` to run all unit and integration tests (73 passing)
+  - [x] Create walkthrough summary
